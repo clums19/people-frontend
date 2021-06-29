@@ -22,6 +22,7 @@ function Index(props){
       title: "",
     });
   };
+  // conditional rendering will help not to shoe broken image
   const loaded = () => {
     return props.people.map((person) => (
       <div key={person._id} className="person">
